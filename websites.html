@@ -1,0 +1,443 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+
+<style>
+* {
+box-sizing:border-box;
+}
+/*body*/
+body{
+border: solid;
+border-color: #1abc9c;
+margin: 10px;
+}
+/* -----------------*/
+
+/*header*/
+.header
+{
+padding: 10px;
+text-transform: uppercase;
+text-align: center;
+background: #1abc9c;
+color: white;
+
+}
+  
+.headerbgimage
+{
+padding: 80px;
+text-transform: uppercase;
+text-align: center;
+background: #1abc9c;
+color: white;
+
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("agriculture2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+  /* -----------------*/
+
+/*Footer*/
+.footer
+{
+   padding: 10px;
+   text-transform: uppercase;
+   background-color: #1abc9c;
+   color: white;
+   text-align: center;
+} 
+
+/* -----------------*/
+
+/*two columnt layout*/
+.column
+{
+float: left;
+margin: 25px;
+}
+.left
+{
+width: 25%;
+}
+.right
+{
+width: 75%;
+}
+.row:after
+{
+content: "";
+display: table;
+clear: both;
+}
+/* -----------------*/
+
+/*paragraph*/
+p{
+text-indent: 50px;
+font-family: thoma, verdana, sans-serif;
+font-size: 20px;
+text-align: justify;
+margin-top: 25px;
+margin-bottom: 25px;
+}
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+/* -----------------*/
+
+/*heading colors*/
+h1
+{
+text-transform: uppercase;
+color: red;
+}
+h2
+{
+text-transform: uppercase;
+color: green;
+}
+h3
+{
+text-transform: uppercase;
+color: blue;
+}
+/* -----------------*/
+   
+
+  /*horizontal menu bar*/
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: left;}
+  /* -----------------------*/
+  .mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+  /* ----------------------------*/
+#tblmodel {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tblmodel td, #tblmodel th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#tblmodel th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+  text-align: center;
+}
+    /* ----------------------------*/
+</style>
+</head>
+<body>
+<div class="header">
+<h1 style="color: white;">Friend of Farmer</h1>
+<h2 style="color: white;">We took initiation to bring maximum agricultural inforamtion in one place.</h2>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 8</div>
+  <img src="img/1.jpg" style="width:100%;height: 300px">
+  <div class="text">1</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 8</div>
+  <img src="img/2.jpg" style="width:100%;height: 300px">
+  <div class="text">2</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 8</div>
+  <img src="img/3.jpg" style="width:100%;height: 300px">
+  <div class="text">3</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 8</div>
+  <img src="img/4.jpg" style="width:100%;height: 300px">
+  <div class="text">4</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 8</div>
+  <img src="img/5.jpg" style="width:100%;height: 300px">
+  <div class="text">5</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 8</div>
+  <img src="img/6.jpg" style="width:100%;height: 300px">
+  <div class="text">6</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 8</div>
+  <img src="img/7.jpg" style="width:100%;height: 300px">
+  <div class="text">7</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 8</div>
+  <img src="img/8.jpg" style="width:100%;height: 300px">
+  <div class="text">8</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  
+
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div>   
+ <ul class="topnav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="schemes.html">Govt. Schemes</a></li>
+  <li><a class="active" href="websites.html">Websites</a></li>
+   <li><a href="weblinks.html">Website Links</a></li>
+   <li><a href="mobileapps.html">Mobile Apps.</a></li>
+   <li><a href="tollfree.html">SMS & Tollfree No.</a></li>
+   <li><a href="tnschemes.html">Schemes under T.N. Govt.</a></li>
+  </ul>
+</div>
+
+<div>   
+ <ul class="topnav">
+ <li style="float: right;"><a  href="javascript:changeLanguageByButtonClick1()"><img src="img/tamil.PNG"></a></li>
+  <li style="float: right;"><a  href="javascript:changeLanguageByButtonClick2()"><img src="img/telugu.PNG"></a></li>
+  <li style="float: right;"><a  href="javascript:changeLanguageByButtonClick3()"><img src="img/english.PNG"></a></li>
+  <li style="float: right;"><a  href="javascript:changeLanguageByButtonClick4()"><img src="img/hindi.PNG"></a></li>
+  </ul>
+</div>
+<div id="google_translate_element" style="display:none"></div>  
+<input type="hidden" id="hidden1" value="ta"></input>
+<input type="hidden" id="hidden2" value="te"></input>
+<input type="hidden" id="hidden3" value="en"></input>
+<input type="hidden" id="hidden4" value="hi"></input>
+
+
+</body>
+<script type="text/javascript">
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: "en"}, 'google_translate_element');
+}
+
+function changeLanguageByButtonClick1() {
+  var language = document.getElementById("hidden1").value;
+  var selectField = document.querySelector("#google_translate_element select");
+  for(var i=0; i < selectField.children.length; i++){
+    var option = selectField.children[i];
+    // find desired langauge and change the former language of the hidden selection-field 
+    if(option.value==language){
+       selectField.selectedIndex = i;
+       // trigger change event afterwards to make google-lib translate this side
+       selectField.dispatchEvent(new Event('change'));
+       break;
+    }
+  }
+}
+ 
+function changeLanguageByButtonClick2() {
+  var language = document.getElementById("hidden2").value;
+  var selectField = document.querySelector("#google_translate_element select");
+  for(var i=0; i < selectField.children.length; i++){
+    var option = selectField.children[i];
+    // find desired langauge and change the former language of the hidden selection-field 
+    if(option.value==language){
+       selectField.selectedIndex = i;
+       // trigger change event afterwards to make google-lib translate this side
+       selectField.dispatchEvent(new Event('change'));
+       break;
+    }
+  }
+}
+  
+  function changeLanguageByButtonClick3() {
+  var language = document.getElementById("hidden3").value;
+  var selectField = document.querySelector("#google_translate_element select");
+  for(var i=0; i < selectField.children.length; i++){
+    var option = selectField.children[i];
+    // find desired langauge and change the former language of the hidden selection-field 
+    if(option.value==language){
+       selectField.selectedIndex = i;
+       // trigger change event afterwards to make google-lib translate this side
+       selectField.dispatchEvent(new Event('change'));
+       break;
+    }
+  }
+}
+  
+  function changeLanguageByButtonClick4() {
+  var language = document.getElementById("hidden4").value;
+  var selectField = document.querySelector("#google_translate_element select");
+  for(var i=0; i < selectField.children.length; i++){
+    var option = selectField.children[i];
+    // find desired langauge and change the former language of the hidden selection-field 
+    if(option.value==language){
+       selectField.selectedIndex = i;
+       // trigger change event afterwards to make google-lib translate this side
+       selectField.dispatchEvent(new Event('change'));
+       break;
+    }
+  }
+}
+</script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<div class="row">
+  <div class="column">
+    <h2 align="center">Agricuture Web Sites</h2>
+<p><b>Kissan GPT</b> is a multilingual AI Agricultural Assistant. Introducing Kissan GPT, an advanced multilingual AI chatbot engineered to provide farmers with personalized, voice-based assistance for all their agricultural needs. </p>
+<p><b>Agricoop</b> site is maintained by the government of India to take apprehension in Agriculture & Horticulture Sector under Ministry of Agriculture. The site deals with: Agriculture Census, Agricultural Marketing, Credit to farmers, Crops & Drought Management, Horticulture, Integrated Nutrient Management, Macro Management, Natural Resources Management, Plant Protection and upbringing of Rashtriya Krishi Vikas Yojana.</p>
+<p><b>ArgriWatch</b> is a private site managed by Indian Agribusiness Systems Pvt. Ltd. It is a group formed by young trade professionals who have had a long involvement in Indian Agribusiness Sector. The Company aims to shorten the communication gap between various Agricultural Commodities by providing latest and accurate information to the farmers, Traders, Processors of Agricultural Outputs, Suppliers of Agricultural Inputs, etc.</p>
+<p><b>farmer.gov.in</b> portal is designed mainly for farmers by the Govt. of India, so that farmer is able to get all Agriculture relevant information on specific subjects around his village, block, district or state. Other objective of this site is to give information in the form of text, SMS, email and audio/video in the language farmer can understands. Through this site farmers are also able to ask specific queries as well as give valuable feedback.</p>
+<p><b>rmlglobal.com </b> RML (Reuters Market Light) is an award-winning private business solution firm that helps farmers to gain maximum profits through their crops. With coverage of more than 450 crop varieties and 1300 markets, RML is a preferred choice for over 1.4 million farmers in 50,000 villages across 18 states in India. RML was launched in India in the state of Maharashtra on 1 Oct, 2007 by the union minister of agriculture of India, Mr. Sharad Pawar.</p>
+<p><b>krishijagran.com</b> visions to emancipate farmers economical conditions alongwith rendering a platform where they can get all the knowledge and wisdom about the progress that agriculture witnesses. KJ serves as an interface among the Industry, Government, Research Institutions, Farming Communities and NGOs. You can get Information regarding agro-events, farm mechanizations, product launches, commodities etc. through Krishi Jagrans portal.</p>
+<p><b>agmarknet.nic.in</b> is run by department of Agriculture & Co-operation (DAC) to implement agricultural marketing policies and programmes of the Government of India. The site shows the latest prices and arrival of different agricultural commodities that are received from the Agricultural Produce Market Committee (APMCs) of different States and are directly uploaded on this AGMARKNET portal.</p>
+<p><b>isapindia.org</b> Indian Society of Agribusiness Professionals (ISAP) is a not-for-profit organization incorporated in 2001. It is one of the largest networks of agriculture and allied sector professionals in India. ISAP acts as a bridge between this network of Indian agricultural community and various other stake- holders of this sector (Governments, International Organizations, Bilateral Developmental agencies, Corporate, Academia, and End-users) through large-scale projects on the field.</p>
+<p><b>fert.nic.in</b> is managed by Department of Fertilizers run by Ministry of Chemicals & Fertilizers, headed by a Cabinet Minister. The key aim of Department of Fertilizers is to ensure sufficient and timely availability of fertilizers at affordable prices to farmers for maximizing agricultural production in the country. The site showcases planning, promotion and development of the Fertilizers Industry, import and distribution of fertilizers and management of financial assistance by way of subsidy/concession for indigenous and imported fertilizers.</p>
+<p><b>agriquest.info</b> is focused on providing enlarge information on agriculture and timely updating of new technologies to the farmers or traders which will helps agricos to cop off food production in accordance with world population growth.</p>
+<p><b>krishiworld.com</b> is a private blog that educate farmer with the latest agro information and to use new technique to solve the inflexible farming problem. the blog gives us article on Biotechnology, Crops, Soils, Fertilizers, Weather, Home Gardening, Marketwatch and Farm Equipment.</p>
+
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>

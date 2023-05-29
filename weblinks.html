@@ -1,0 +1,588 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+
+<style>
+* {
+box-sizing:border-box;
+}
+/*body*/
+body{
+border: solid;
+border-color: #1abc9c;
+margin: 10px;
+}
+/* -----------------*/
+
+/*header*/
+.header
+{
+padding: 10px;
+text-transform: uppercase;
+text-align: center;
+background: #1abc9c;
+color: white;
+
+}
+  
+.headerbgimage
+{
+padding: 80px;
+text-transform: uppercase;
+text-align: center;
+background: #1abc9c;
+color: white;
+
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("agriculture2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+  /* -----------------*/
+
+/*Footer*/
+.footer
+{
+   padding: 10px;
+   text-transform: uppercase;
+   background-color: #1abc9c;
+   color: white;
+   text-align: center;
+} 
+
+/* -----------------*/
+
+/*two columnt layout*/
+.column
+{
+float: left;
+margin: 25px;
+width: auto;
+}
+.left
+{
+width: 25%;
+}
+.right
+{
+width: 75%;
+}
+.row:after
+{
+content: "";
+display: table;
+clear: both;
+}
+/* -----------------*/
+
+/*paragraph*/
+p{
+text-indent: 50px;
+font-family: thoma, verdana, sans-serif;
+font-size: 20px;
+text-align: justify;
+margin-top: 25px;
+margin-bottom: 25px;
+}
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+/* -----------------*/
+
+/*heading colors*/
+h1
+{
+text-transform: uppercase;
+color: red;
+}
+h2
+{
+text-transform: uppercase;
+color: green;
+}
+h3
+{
+text-transform: uppercase;
+color: blue;
+}
+/* -----------------*/
+   
+
+  /*horizontal menu bar*/
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: left;}
+  /* -----------------------*/
+  .mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+  /* ----------------------------*/
+#tblmodel {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tblmodel td, #tblmodel th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#tblmodel th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+  text-align: center;
+}
+  table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+    /* ----------------------------*/
+</style>
+</head>
+<body>
+<div class="header">
+<h1 style="color: white;">Friend of Farmer</h1>
+<h2 style="color: white;">We took initiation to bring maximum agricultural inforamtion in one place.</h2>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 8</div>
+  <img src="img/1.jpg" style="width:100%;height: 300px">
+  <div class="text">1</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 8</div>
+  <img src="img/2.jpg" style="width:100%;height: 300px">
+  <div class="text">2</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 8</div>
+  <img src="img/3.jpg" style="width:100%;height: 300px">
+  <div class="text">3</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 8</div>
+  <img src="img/4.jpg" style="width:100%;height: 300px">
+  <div class="text">4</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 8</div>
+  <img src="img/5.jpg" style="width:100%;height: 300px">
+  <div class="text">5</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 8</div>
+  <img src="img/6.jpg" style="width:100%;height: 300px">
+  <div class="text">6</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 8</div>
+  <img src="img/7.jpg" style="width:100%;height: 300px">
+  <div class="text">7</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 8</div>
+  <img src="img/8.jpg" style="width:100%;height: 300px">
+  <div class="text">8</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  
+
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div>   
+ <ul class="topnav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="schemes.html">Govt. Schemes</a></li>
+  <li><a href="websites.html">Websites</a></li>
+   <li><a class="active" href="weblinks.html">Website Links</a></li>
+   <li><a href="mobileapps.html">Mobile Apps.</a></li>
+   <li><a href="tollfree.html">SMS & Tollfree No.</a></li>
+   <li><a href="tnschemes.html">Schemes under T.N. Govt.</a></li>
+  </ul>
+</div>
+
+<div>   
+ <ul class="topnav">
+ <li style="float: right;"><a  href="javascript:changeLanguageByButtonClick1()"><img src="img/tamil.PNG"></a></li>
+  <li style="float: right;"><a  href="javascript:changeLanguageByButtonClick2()"><img src="img/telugu.PNG"></a></li>
+  <li style="float: right;"><a  href="javascript:changeLanguageByButtonClick3()"><img src="img/english.PNG"></a></li>
+  <li style="float: right;"><a  href="javascript:changeLanguageByButtonClick4()"><img src="img/hindi.PNG"></a></li>
+  </ul>
+</div>
+<div id="google_translate_element" style="display:none"></div>  
+<input type="hidden" id="hidden1" value="ta"></input>
+<input type="hidden" id="hidden2" value="te"></input>
+<input type="hidden" id="hidden3" value="en"></input>
+<input type="hidden" id="hidden4" value="hi"></input>
+
+
+</body>
+<script type="text/javascript">
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: "en"}, 'google_translate_element');
+}
+
+function changeLanguageByButtonClick1() {
+  var language = document.getElementById("hidden1").value;
+  var selectField = document.querySelector("#google_translate_element select");
+  for(var i=0; i < selectField.children.length; i++){
+    var option = selectField.children[i];
+    // find desired langauge and change the former language of the hidden selection-field 
+    if(option.value==language){
+       selectField.selectedIndex = i;
+       // trigger change event afterwards to make google-lib translate this side
+       selectField.dispatchEvent(new Event('change'));
+       break;
+    }
+  }
+}
+ 
+function changeLanguageByButtonClick2() {
+  var language = document.getElementById("hidden2").value;
+  var selectField = document.querySelector("#google_translate_element select");
+  for(var i=0; i < selectField.children.length; i++){
+    var option = selectField.children[i];
+    // find desired langauge and change the former language of the hidden selection-field 
+    if(option.value==language){
+       selectField.selectedIndex = i;
+       // trigger change event afterwards to make google-lib translate this side
+       selectField.dispatchEvent(new Event('change'));
+       break;
+    }
+  }
+}
+  
+  function changeLanguageByButtonClick3() {
+  var language = document.getElementById("hidden3").value;
+  var selectField = document.querySelector("#google_translate_element select");
+  for(var i=0; i < selectField.children.length; i++){
+    var option = selectField.children[i];
+    // find desired langauge and change the former language of the hidden selection-field 
+    if(option.value==language){
+       selectField.selectedIndex = i;
+       // trigger change event afterwards to make google-lib translate this side
+       selectField.dispatchEvent(new Event('change'));
+       break;
+    }
+  }
+}
+  
+  function changeLanguageByButtonClick4() {
+  var language = document.getElementById("hidden4").value;
+  var selectField = document.querySelector("#google_translate_element select");
+  for(var i=0; i < selectField.children.length; i++){
+    var option = selectField.children[i];
+    // find desired langauge and change the former language of the hidden selection-field 
+    if(option.value==language){
+       selectField.selectedIndex = i;
+       // trigger change event afterwards to make google-lib translate this side
+       selectField.dispatchEvent(new Event('change'));
+       break;
+    }
+  }
+}
+</script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<div class="row">
+  <div class="column">
+    <h2 align="center">Web Site links</h2>
+<table id="tblmodel" class="center">
+  <tr>
+    <th>Agricultural Websites<br>------------------------------------------------------------------------------------------------------------------------------------</th>
+    <th>URL</th>
+
+  </tr>
+
+<tr>
+    <td>Kisan GPT</td>
+    <td><a href="https://kissangpt.com/" target="_blank">kissangpt.com</a></td>
+  </tr>
+
+<tr>
+
+<tr>
+    <td>Department of Agriculture, Cooperation and Farmers Welfare</td>
+    <td><a href="https://agricoop.nic.in" target="_blank">agricoop.nic.in</a></td>
+  </tr>
+
+<tr>
+    <td>Agriculture Information</td>
+    <td><a href="https://agriwatch.com" target="_blank">agriwatch.com</a></td>
+  </tr>
+
+<tr>
+    <td>Farmers’ Portal</td>
+    <td><a href="https://farmer.gov.in" target="_blank">farmer.gov.in</a></td>
+  </tr>
+
+<tr>
+    <td>Largest Rural Media Network</td>
+    <td><a href="https://krishijagran.com" target="_blank">krishijagran.com</a></td>
+  </tr>
+
+<tr>
+    <td>Agriculture Market Network</td>
+    <td><a href="https://agmarknet.nic.in" target="_blank">agmarknet.nic.in</a></td>
+  </tr>
+
+<tr>
+    <td>ISAP India</td>
+    <td><a href="https://isapindia.org" target="_blank">isapindia.org</a></td>
+  </tr>
+
+<tr>
+    <td>Department of Fertilizers</td>
+    <td><a href="https://fert.nic.in/" target="_blank">fert.nic.in</a></td>
+  </tr>
+
+<tr>
+    <td>Agricultural Information</td>
+    <td><a href="https://agriquest.info" target="_blank">agriquest.info</a></td>
+  </tr>
+
+ <tr>
+    <td>For Tractor News, Tractor Loans, Tractor Insurance</td>
+    <td><a href="http://tractorbuyersguide.in/" target="_blank">tractorbuyersguide.in</td>
+  </tr>
+<tr>
+    <td>For Latest Updates about Agricultural Technologies</td>
+    <td><a href="http://agtechnews.com/" target="_blank">agtechnews.com</td>
+  </tr>
+<tr>
+    <td>For Seed Industry Updates</td>
+    <td><a href="https://seedindustrynews.com/" target="_blank">seedindustrynews.com</td>
+  </tr>
+<tr>
+    <td>For Sustainable Agriculture News</td>
+    <td><a href="https://sustainableagnews.com/" target="_blank">sustainableagnews.com</td>
+  </tr>
+<tr>
+    <td>For News Related to Plant Pathology</td>
+    <td><a href="https://plantpathologynews.com/" target="_blank">plantpathologynews.com</td>
+  </tr>
+<tr>
+    <td>For Agricultural Marketing News</td>
+    <td><a href="https://agrimarketingnews.com/" target="_blank">agrimarketingnews.com</td>
+  </tr>
+<tr>
+    <td>For Latest Agriculture Market Prices</td>
+    <td><a href="https://agrimarketprices.com/" target="_blank">agrimarketprices.com</td>
+  </tr>
+<tr>
+    <td>For Indian Agriculture Retailers</td>
+    <td><a href="http://agriretailers.com/" target="_blank">agriretailers.com</td>
+  </tr>
+<tr>
+    <td>For Agriculture Insurance</td>
+    <td><a href="http://agriinsurance.com/" target="_blank">agriinsurance.com</td>
+  </tr>
+
+<tr>
+    <td>Ministry of Rural Development</td>
+    <td><a href="http://rural.nic.in" target="_blank">rural.nic.in</td>
+  </tr>
+<tr>
+    <td>mKisan (Help through mobile messaging for farmers)</td>
+    <td><a href="http://mkisan.gov.in/" target="_blank">mkisan.gov.in</td>
+  </tr>
+
+<tr>
+    <th>Govt. Scheme</th>
+    <th>URL</th>
+
+  </tr>
+<tr>
+    <td>Soil Health Card Scheme</td>
+    <td><a href="https://www.soilhealth.dac.gov.in/home" target="_blank">Soil Health Card Scheme</a></td>
+  </tr>
+
+<tr>
+    <td>Neem Coated Urea</td>
+    <td><a href="https://www.fert.nic.in/sites/default/files/What-is-new/Neem-Coated.pdf" target="_blank">Neem Coated Urea</a></td>
+  </tr>
+
+<tr>
+    <td>Paramparagat Krishi Vikas Yojana (PKVY)</td>
+    <td><a href="https://dmsouthwest.delhi.gov.in/scheme/paramparagat-krishi-vikas-yojana/" target="_blank">Paramparagat Krishi Vikas Yojana (PKVY)</a></td>
+  </tr>
+
+<tr>
+    <td>Pradhan Mantri Krishi Sinchayee Yojana (PMKSY)</a></td>
+    <td><a href="https://pmksy.nic.in/" target="_blank">Pradhan Mantri Krishi Sinchayee Yojana (PMKSY)</a></td>
+  </tr>
+
+<tr>
+    <td>National Agriculture Market (e-NAM)</td>
+    <td><a href="https://www.enam.gov.in/web/" target="_blank">National Agriculture Market (e-NAM)</a></td>
+  </tr>
+
+<tr>
+    <td>Pradhan Mantri Fasal Bima Yojana (PMFBY)</td>
+    <td><a href="https://pmfby.gov.in/" target="_blank">Pradhan Mantri Fasal Bima Yojana (PMFBY)</a></td>
+  </tr>
+
+<tr>
+    <td>Interest Subvention Scheme</td>
+    <td><a href="https://www.nabard.org/content1.aspx?id=602&catid=23&mid=23" target="_blank">Interest Subvention Scheme</a></td>
+  </tr>
+
+<tr>
+    <td>Pradhan Mantri Kisan Samman Nidhi</td>
+    <td><a href="https://pmkisan.gov.in/" target="_blank">Pradhan Mantri Kisan Samman Nidhi</a></td>
+  </tr>
+
+<tr>
+    <td>Primary Agricultural Credit Societies (PACS)</td>
+    <td><a href="https://www.drishtiias.com/daily-updates/daily-news-analysis/primary-agricultural-credit-societies" target="_blank">Primary Agricultural Credit Societies (PACS)</a></td>
+  </tr>
+
+
+</table>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
