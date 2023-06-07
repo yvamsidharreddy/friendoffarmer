@@ -424,7 +424,6 @@ mytime=setTimeout('display_ct()',refresh)
 
 function display_ct() {
 var x = new Date()
-document.getElementById('ct').style.textAlign = 'center';
 document.getElementById('ct').style.fontSize='30px';
 document.getElementById('ct').style.color='#0030c0';
 document.getElementById('ct').innerHTML = x;
@@ -434,7 +433,7 @@ display_c();
 
 <div class="row">
   <div class="column">
-    <span id='ct' ></span>
+    <span id='ct' style="border:1px solid red;align=center"></span>
     <h2 align="center">Introduction</h2>
 <p>Population is increasing; land is decreasing, so it is very necessary to increase productivity of crops. Currently agriculture contributes roughly 17% of India's GDP which was 43% in 1970. In last 10 years, agricultural growth has been approximately 1.5% while India's GDP has grown over 7%. Abate the unending struggles of farmers in India, the government has time to time brought many institutional as well as technological reforms to help the farmers, providing various schemes and funding to farmers Government interferes in everything right from buying seeds and fertilizers to selling it in the market. Massive amounts of public money are spent in subsidies, all the schemes are running in our country but the problem is that these schemes are not reached to every farmer.</p>
 <p>So we have to adopt better methodology to spread these schemes so that farmers can get their every right and can live a better life. There are number of websites, SMS services, and Agriculture centers available for agricultural news. Websites for farmers that'll give them practical advice on pesticides, fertilizers, soil types and easy ways to identify crop diseases, in all Indian languages. 
