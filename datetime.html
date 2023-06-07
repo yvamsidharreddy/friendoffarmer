@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>(Type a title for your page here)</title>
+<script type="text/javascript">
+function display_c(){
+var refresh=1000; // Refresh rate in milli seconds
+mytime=setTimeout('display_ct()',refresh)
+}
+
+function display_ct() {
+var x = new Date()
+document.getElementById('ct').style.textAlign = 'center';
+document.getElementById('ct').style.fontSize='30px';
+document.getElementById('ct').style.color='#0030c0';
+document.getElementById('ct').innerHTML = x;
+display_c();
+ }
+</script>
+</head>
+
+<body onload=display_ct();>
